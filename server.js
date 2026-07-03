@@ -16,6 +16,8 @@ Challenge:
   hint.md for git command help.
 */
 
+// Introduced comment for purposes of learning about Git in Visual Studio IDE
+
 // Logging
 console.log('server.js - Logging - process.env.NODE_ENV', process.env.NODE_ENV)
 
