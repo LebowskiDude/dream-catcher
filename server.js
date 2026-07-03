@@ -12,7 +12,7 @@ const app = express();
 
 /*
 Challenge:
-  1. Push this code to GitHub.
+  1. Pushed this code to GitHub.
   hint.md for git command help.
 */
 
