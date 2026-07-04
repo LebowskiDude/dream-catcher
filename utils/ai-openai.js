@@ -1,6 +1,4 @@
 import OpenAI from 'openai';
-import 'dotenv/config';
-
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
   });
@@ -16,7 +14,7 @@ export async function getDreamInterpretation(dreamText) {
   try {
     const message = await openai.chat.completions.create({
       model,
-      max_completion_tokens: 5000,
+      max_tokens: 512,
       messages: [
         {
           role: 'system',

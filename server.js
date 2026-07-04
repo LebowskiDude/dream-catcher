@@ -10,19 +10,9 @@ const __dirname = dirname(__filename);
 
 const app = express();
 
-/*
-Challenge:
-  1. Pushed this code to GitHub.
-  hint.md for git command help.
-*/
-
-// Introduced comment for purposes of learning about Git in Visual Studio IDE
-
-// Logging
-console.log('server.js - Logging - process.env.NODE_ENV', process.env.NODE_ENV)
-
-if (process.env.NODE_ENV === 'production'){
-  app.use(helmet());
+// Add securiy headers
+if (process.env.NODE_ENV === 'production') {
+  app.use(helmet()); 
 }
 
 const PORT = process.env.PORT || 3001;
